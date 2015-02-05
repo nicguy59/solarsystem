@@ -1,0 +1,7 @@
+<h1><%= @body_type.name %></h1>
+
+<% @body_type.bodies.each do |body| %>
+
+  <p><%= link_to(body.name, body_path(body)) %></p>
+
+ <% end %> 
