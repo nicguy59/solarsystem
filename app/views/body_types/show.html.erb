@@ -1,0 +1,17 @@
+<div class="row">
+  <div id="leftCol" class="col-xs-3">
+    <h1><%= @body_type.name %></h1>
+
+     <% @body_type.bodies.each do |body| %>
+
+      <h4><%= link_to(body.name, body_path(body)) %></h4>
+
+     <% end %>
+     
+     
+  </div>
+  <div id="rightcol" class="col-xs-9">
+      
+        <iframe src="http://codepen.io/juliangarnier/full/idhuG" width="100%" height="600px" frameborder="0"></iframe>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Solarsystem</title>
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <!-- Structure source: "https://www.railstutorial.org/book/filling_in_the_layout" -->
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <!-- Add in background stars.  Needed Background Controller and Helper -->
+      <body style="<%= body_style %>">
+      <%= yield %>
+
+    </div> 
+    <%= render 'layouts/footer' %>    
+  </body>
+</html>
